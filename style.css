@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  appearance: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-size: 0.8rem;
+  font-family: poppins, sans-serif;
+  background: var(--color-background);
+  user-select: none;
+  overflow-x: hidden;
+  color: var(--color-dark);
+}
+
+.container {
+  display: grid;
+  width: 96%;
+  height: 96%;
+  margin: 2% auto auto;
+  grid-template-columns: 4rem 25rem auto;
+  border: 2px solid black;
+  background: #202020;
+}
+
+a {
+  color: var(--color-dark);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 0.87rem;
+}
+
+h4 {
+  font-weight: 200;
+  font-size: 0.8rem;
+  color: grey;
+}
+
+h5 {
+  font-size: 0.77rem;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+.profile-photo {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.text-muted {
+  color: var(--color-info-dark);
+}
+
+p {
+  color: var(--color-dark-variant);
+}
+
+b {
+  color: var(--color-dark);
+}
+
+.primary {
+  color: var(--color-primary);
+}
+
+.danger {
+  color: var(--color-danger);
+}
+
+.success {
+  color: var(--color-success);
+}
+
+.warning {
+  color: var(--color-warning);
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  background: #202020;
+  align-content: center;
+  position: relative;
+  border: 0.1rem solid black;
+  border-right: none;
+}
+aside a {
+  color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  margin-top: 0.5rem;
+  position: relative;
+}
+aside .profile-photo {
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+aside a.active {
+  background: #272727;
+  border-radius: 2rem;
+  width: 90%;
+  margin: 0.5rem auto 0;
+}
+
+aside a.active::before {
+  content: "";
+  width: 90%;
+  height: 100%;
+  border: 0.15rem solid #00a884;
+  border-radius: 2rem;
+  background: transparent;
+  position: absolute;
+  left: 0;
+}
+
+aside a:nth-last-child(2) {
+  position: absolute;
+  bottom: 1rem;
+}
+aside a:nth-last-child(1) {
+  position: absolute;
+  bottom: 4rem;
+}
+
+/* end of aside bar  */
+
+.mainchat {
+  background: #272727;
+  position: relative;
+  padding: 1rem 1rem;
+  color: white;
+  border-top-left-radius: 1rem;
+  border: 0.1rem solid black;
+}
+
+.mainchat .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainchat .top .edit {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainchat .top .edit span {
+  padding: 0.6rem 1rem;
+  border-radius: 1rem;
+}
+.mainchat .top .edit span:hover {
+  background: #353535;
+  cursor: pointer;
+}
+
+.mainchat .middle {
+  margin-top: 0.8rem;
+  position: relative;
+}
+
+.mainchat .middle input[type="text"] {
+  width: 100%;
+  height: 2.2rem;
+  border-radius: 0.5rem;
+  border-bottom: 0.2rem solid #00a884;
+  padding: 0 1rem;
+  background: #202020;
+  color: white;
+  font-size: 1rem;
+}
+.mainchat .middle span {
+  position: absolute;
+  right: 1rem;
+  margin: 0.3rem auto;
+  font-size: 1.3rem;
+}
+
+.mainchat .bottom {
+  margin-top: 0.8rem;
+  height: 78vh;
+  overflow-y: scroll;
+}
+.mainchat .bottom::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+.mainchat .bottom .box {
+  margin-top: 1rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 4fr 0.8fr;
+  padding: 0.5rem 0.5rem;
+  cursor: pointer;
+}
+
+.mainchat .bottom .box.active {
+  background: #404040;
+  border-radius: 1rem;
+}
+.mainchat .bottom .box:hover {
+  background: #343434;
+  border-radius: 1rem;
+  transition: all ease 200ms;
+}
+
+/* end of mainChat box */
+
+main {
+  background: #303030;
+  display: grid;
+  grid-template-rows: 5rem auto 4rem;
+  border-right: 0.1rem solid black;
+}
+
+main .header {
+  background: #272727;
+  border-bottom: 0.1rem solid black;
+  display: grid;
+  grid-template-columns: 2rem auto 15rem;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+  color: white;
+}
+
+main .header .media {
+  display: flex;
+  justify-content: space-around;
+}
+
+main .header .media span {
+  padding: 0.5rem 1.6rem;
+  background: #202020;
+  border: 0.1rem solid #929292;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+main .header .media span:last-child {
+  background: none;
+  border: none;
+}
+main .header .media span:nth-child(1) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+main .header .media span:nth-child(2) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+main .header .media span:hover {
+  background: #404040;
+}
+
+main .header h3 {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+main .footer {
+  background: #272727;
+  border-top: 0.1rem solid black;
+  display: grid;
+  grid-template-columns: 3rem 3rem auto 3rem;
+  align-items: center;
+  padding: 0 1rem;
+  gap: 0.5rem;
+  color: white;
+}
+
+main .footer input[type="text"] {
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 0 1rem;
+  background: transparent;
+  color: white;
+}
+main .footer span {
+  background: none;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.5rem;
+}
+main .footer span:hover {
+  background: #404040;
+}
+
+main .content {
+  position: relative;
+  font-size: 1rem;
+  padding: 0.5rem 1rem 0;
+  opacity: 0.6;
+  background: repeating-linear-gradient(
+    45deg,
+    #070708,
+    #070708 11px,
+    #272727 11px,
+    #272727 55px
+  );
+}
+
+main .content .client {
+  margin-top: 0.5rem;
+  position: relative;
+  height: auto;
+  color: white;
+  padding: 0.5rem 1rem;
+  background: #363636;
+  border-radius: 0.5rem;
+}
+
+main .content .client::before {
+  content: "dfdfasfafsadadad";
+  width: 6px;
+  background: red;
+}
+
+main .content .sender {
+  margin-top: 0.5rem;
+  position: relative;
+  height: auto;
+  padding: 0.5rem 1rem;
+  background: #025c4c;
+  border-radius: 0.5rem;
+  color: white;
+}
+
+main .content h4 {
+  font-size: 1rem;
+  color: white;
+}
