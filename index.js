@@ -1,4 +1,4 @@
-Contacts.forEach((contact) => {
+Contacts.forEach((contact, index) => {
   const div = document.createElement("div");
   div.className = "box";
   const divContent = `
@@ -15,4 +15,20 @@ Contacts.forEach((contact) => {
                 `;
   div.innerHTML = divContent;
   document.querySelector(".mainchat .bottom").appendChild(div);
+
+  div.onclick = function () {
+    document.querySelector(".active").className = "box";
+    div.className = "box active";
+  };
+
+  let list = document.querySelectorAll(".list");
+  for (let i = 0; i < list.length; i++) {
+    list[i].onclick = function () {
+      let j = 0;
+      while (j < list.length) {
+        list[j++].className = "list";
+      }
+      list[i].className = "list active1";
+    };
+  }
 });

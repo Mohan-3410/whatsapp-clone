@@ -20,7 +20,7 @@ const Contacts = [
   {
     contactName: "Dinesh👊",
     contactProfile: "images/dinesh.jpg",
-    contactMessage: "Hell0..!!",
+    contactMessage: "BGMI Khelega kya",
     contactMessageTime: "20:00",
   },
   {
