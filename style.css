@@ -234,6 +234,14 @@ aside a.active1::before {
   border-radius: 1rem;
   transition: all ease 200ms;
 }
+.mainchat .bottom .box .mobile {
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  position: absolute;
+  border-radius: 1rem;
+  display: none;
+}
 
 /* end of mainChat box */
 
@@ -366,4 +374,22 @@ main .content .sender span {
   padding: 0.5rem;
   color: white;
   border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  aside {
+    display: none;
+  }
+  main {
+    display: none;
+  }
+
+  .mainchat .bottom .box .mobile {
+    display: block;
+  }
 }

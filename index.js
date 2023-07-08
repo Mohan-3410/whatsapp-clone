@@ -2,6 +2,7 @@ Contacts.forEach((contact, index) => {
   const div = document.createElement("div");
   div.className = "box";
   const divContent = `
+            <div class="mobile"></div>
             <div class="profilePhoto profile-photo">
             <img src=${contact.contactProfile} alt="" />
             </div>
@@ -35,3 +36,11 @@ Contacts.forEach((contact, index) => {
     };
   }
 });
+
+let mobile = document.querySelectorAll(".mobile");
+for (let i = 0; i < mobile.length; i++) {
+  mobile[i].onclick = function () {
+    document.querySelector("main").style.display = "grid";
+    document.querySelector(".mainchat").style.display = "none";
+  };
+}
