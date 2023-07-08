@@ -110,14 +110,14 @@ b {
 }
 
 aside {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   background: #202020;
-  align-content: center;
+  align-content: space-between;
   position: relative;
   border: 0.1rem solid black;
   border-right: none;
   height: 95vh;
+  padding-bottom: 0.5rem;
 }
 aside a {
   color: white;
@@ -152,15 +152,6 @@ aside a.active1::before {
   background: transparent;
   position: absolute;
   left: 0;
-}
-
-aside a:nth-last-child(2) {
-  position: relative;
-  top: 69vh;
-}
-aside a:nth-last-child(1) {
-  position: relative;
-  top: 57vh;
 }
 
 /* end of aside bar  */
