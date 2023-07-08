@@ -20,10 +20,9 @@ body {
   height: 100vh;
   font-size: 0.8rem;
   font-family: poppins, sans-serif;
-  background: var(--color-background);
+  background: rgb(0, 25, 25);
   user-select: none;
   overflow-x: hidden;
-  color: var(--color-dark);
 }
 
 .container {
@@ -366,4 +365,13 @@ main .content .sender span {
   padding: 0.5rem;
   color: white;
   border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    grid-template-columns: 0 auto 0;
+    background: transparent;
+    border: none;
+  }
 }
