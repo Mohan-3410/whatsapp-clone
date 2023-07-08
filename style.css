@@ -23,13 +23,13 @@ body {
   background: rgb(0, 25, 25);
   user-select: none;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .container {
   display: grid;
-  width: 96%;
-  height: 95vh;
-  margin: 2% auto auto;
+  width: 100vw;
+  height: 100vh;
   grid-template-columns: 4rem 25rem auto;
   border: 2px solid black;
   background: #202020;
@@ -115,7 +115,7 @@ aside {
   position: relative;
   border: 0.1rem solid black;
   border-right: none;
-  height: 95vh;
+  height: 100vh;
   padding-bottom: 0.5rem;
 }
 aside a {
@@ -161,9 +161,8 @@ aside a.active1::before {
   position: relative;
   padding: 1rem 1rem;
   color: white;
-  border-top-left-radius: 1rem;
   border: 0.1rem solid black;
-  height: 95vh;
+  height: 100vh;
 }
 
 .mainchat .top {
@@ -250,7 +249,7 @@ main {
   display: grid;
   grid-template-rows: 5rem auto 4rem;
   border-right: 0.1rem solid black;
-  height: 95vh;
+  height: 100vh;
 }
 
 main .header {
