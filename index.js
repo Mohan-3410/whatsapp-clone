@@ -44,3 +44,9 @@ for (let i = 0; i < mobile.length; i++) {
     document.querySelector(".mainchat").style.display = "none";
   };
 }
+
+let back = document.querySelector(".back");
+back.onclick = function () {
+  document.querySelector("main").style.display = "none";
+  document.querySelector(".mainchat").style.display = "grid";
+};

@@ -263,6 +263,9 @@ main .header {
   padding: 0 1rem;
   color: white;
 }
+main .header .back {
+  display: none;
+}
 
 main .header .media {
   display: flex;
@@ -391,5 +394,20 @@ main .content .sender span {
 
   .mainchat .bottom .box .mobile {
     display: block;
+  }
+  main .header {
+    grid-template-columns: 3rem 2rem auto 15rem;
+  }
+
+  main .header .back {
+    display: grid;
+  }
+
+  main .header .back span {
+    padding: 0.3rem 0.5rem;
+    background: #202020;
+    border: 0.1rem solid #929292;
+    border-radius: 0.5rem;
+    cursor: pointer;
   }
 }
