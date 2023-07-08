@@ -29,7 +29,7 @@ body {
 .container {
   display: grid;
   width: 96%;
-  height: 96%;
+  height: 95vh;
   margin: 2% auto auto;
   grid-template-columns: 4rem 25rem auto;
   border: 2px solid black;
@@ -117,6 +117,7 @@ aside {
   position: relative;
   border: 0.1rem solid black;
   border-right: none;
+  height: 95vh;
 }
 aside a {
   color: white;
@@ -154,12 +155,12 @@ aside a.active1::before {
 }
 
 aside a:nth-last-child(2) {
-  position: absolute;
-  bottom: 1rem;
+  position: relative;
+  top: 69vh;
 }
 aside a:nth-last-child(1) {
-  position: absolute;
-  bottom: 4rem;
+  position: relative;
+  top: 57vh;
 }
 
 /* end of aside bar  */
@@ -171,6 +172,7 @@ aside a:nth-last-child(1) {
   color: white;
   border-top-left-radius: 1rem;
   border: 0.1rem solid black;
+  height: 95vh;
 }
 
 .mainchat .top {
@@ -249,6 +251,7 @@ main {
   display: grid;
   grid-template-rows: 5rem auto 4rem;
   border-right: 0.1rem solid black;
+  height: 95vh;
 }
 
 main .header {
@@ -328,7 +331,7 @@ main .content {
   padding: 0.5rem 1rem 0.5rem;
   opacity: 0.6;
   overflow-y: scroll;
-  height: 77.9vh;
+
   background: repeating-linear-gradient(
     45deg,
     #070708,

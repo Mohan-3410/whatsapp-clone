@@ -19,6 +19,9 @@ Contacts.forEach((contact, index) => {
   div.onclick = function () {
     document.querySelector(".active").className = "box";
     div.className = "box active";
+
+    document.getElementById("dp").src = contact.contactProfile;
+    document.querySelector("main .name h3").innerHTML = contact.contactName;
   };
 
   let list = document.querySelectorAll(".list");
