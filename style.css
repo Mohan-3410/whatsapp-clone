@@ -138,13 +138,13 @@ aside .profile-photo {
 aside a.active1 {
   background: #272727;
   border-radius: 2rem;
-  width: 90%;
+  width: 100%;
   margin: 0.5rem auto 0;
 }
 
 aside a.active1::before {
   content: "";
-  width: 90%;
+  width: 94%;
   height: 100%;
   border: 0.15rem solid #00a884;
   border-radius: 2rem;
@@ -156,6 +156,7 @@ aside a.active1::before {
 /* end of aside bar  */
 
 .mainchat {
+  display: block;
   background: #272727;
   position: relative;
   padding: 1rem 1rem;
@@ -190,7 +191,7 @@ aside a.active1::before {
 }
 
 .mainchat .middle input[type="text"] {
-  width: 100%;
+  width: 96%;
   height: 2.2rem;
   border-radius: 0.5rem;
   border-bottom: 0.2rem solid #00a884;
@@ -370,8 +371,14 @@ main .content .sender span {
 @media screen and (max-width: 768px) {
   .container {
     width: 100%;
-    grid-template-columns: 0 auto 0;
+    grid-template-columns: 1fr;
     background: transparent;
     border: none;
+  }
+  aside {
+    display: none;
+  }
+  main {
+    display: none;
   }
 }
