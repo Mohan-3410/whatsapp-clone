@@ -395,7 +395,8 @@ main .content .sender span {
     display: block;
   }
   main .header {
-    grid-template-columns: 3rem 2rem auto 15rem;
+    grid-template-columns: 1rem 1rem auto auto;
+    gap: 3rem;
   }
 
   main .header .back {
@@ -404,8 +405,18 @@ main .content .sender span {
 
   main .header .back span {
     padding: 0.3rem 0.5rem;
-    background: #202020;
-    border: 0.1rem solid #929292;
+
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  main .header .media {
+    display: flex;
+    justify-content: right;
+  }
+  main .header .media span {
+    padding: 0.3rem 0.8rem;
+    background: transparent;
+    border: none;
     border-radius: 0.5rem;
     cursor: pointer;
   }
